@@ -4,30 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Unit Conversions </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 	<section id="home">
 		<!-- main heading -->
-		<header><b>Unit Conversions</header>
+		<header>Unit Conversions</header>
 
 		<nav>
-			<!-- for holding main unit conversions buttons -->
-			
-			<!-- button for temp. section -->
-			<a href="#temperature"><button>Temperature</button></a>
+			<div class="topdiv">
+				<!-- for holding main unit conversions buttons -->
+				
+				<!-- button for temp. section -->
+				<a href="#temperature"><button class="topmenu">Temperature</button></a>
 
-			<!-- button for weight section -->
-			<a href="#weight"><button>Weight</button></a>
+				<!-- button for weight section -->
+				<a href="#weight"><button class="topmenu">Weight</button></a>
 
-			<!-- button for distance section -->
-			<a href="#distance"><button>Distance</button></a>
+				<!-- button for distance section -->
+				<a href="#distance"><button class="topmenu">Distance</button></a>
+			</div>
 		</nav>
 	</section>
 
+	<div style="clear:both"></div>
+
 	<!-- div tag that holds all conversions sections -->
 	<div id="all-connversion-sections">
-		<section id="temperature">
+		<section id="temperature" class="b temperature">
 			<!-- Temp. conversion section -->
 
 			<!-- div tag that holds figure for a visual depiction of the conversion -->
@@ -64,8 +70,9 @@
 			</div>
 		</section>
 
+
 		<!-- weight conversion section -->
-		<section id="weight">
+		<section id="weight" class="b weight">
 			<div id="weight_sec">
 				<figure>
 					<img src="images/weight_visual.jpg" width="200px">
@@ -94,7 +101,9 @@
 			</div>
 		</section>
 
-		<section id="distance">
+		<div style="clear:both;"></div>
+
+		<section id="distance" class="b distance">
 			<div id="distance_sec">
 				<figure>
 					<img src="images/distance_visual.png" width="200px">
@@ -121,9 +130,11 @@
          		</aside>
 			</div>
 		</section>
+
+		<div style="clear:both;"></div>
 	</div>
 
-	<div id="go-home">
+	<div id="go-home" class="ioconbutton">
 		<a href="#home"> 
 			 <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
         </a>
