@@ -6,6 +6,8 @@
 	<title>Unit Conversions </title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="script.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
 	<div style="clear:both"></div>
 
 	<!-- div tag that holds all conversions sections -->
-	<div id="all-connversion-sections">
+	<div id="all-conversion-sections">
 		<section id="temperature" class="b temperature">
 			<!-- Temp. conversion section -->
 
@@ -52,12 +54,12 @@
 						<!-- create label for temp. input -->
 						<label for="Temperature">Celsius</label> </br>
 
-						<input type="number" id="c"> </br>
+						<input type="number" id="celsius"> </br>
 
 						<!-- add conversion button -->
-						<button id="temperature"> Convert</button> </br>
+						<button id="temperature" onclick="temperature()"> Convert</button> </br>
 						<!-- create label for temp. output -->
-						<input type="number" id="f"> </br>
+						<input type="number" id="fahrenheit"> </br>
 
 						<label for="Temperature">Fahrenheit</label>
 					</fieldset>
@@ -85,11 +87,11 @@
 
 						<label for="weight"> Kilograms</label> </br>
 
-						<input type="number" id="kgs"> </br>
+						<input type="number" id="kilo"> </br>
 
-						<button id="weight">Convert</button> </br>
+						<button id="weight" onclick="weight()">Convert</button> </br>
 
-						<input type="number" id="lbs"> </br>
+						<input type="number" id="pounds"> </br>
 
 						<label for="weight">Pounds</label> </br>
 					</fieldset>
@@ -117,9 +119,9 @@
 
 						<input type="number" id="km"> </br>
 
-						<button>Convert</button> </br>
+						<button id="distance" onclick="distance()">Convert</button> </br>
 
-						<input type="number" id="m"> </br>
+						<input type="number" id="miles"> </br>
 
 						<label for="distance">Miles</label>
 					</fieldset>
